@@ -1,11 +1,13 @@
-
+//when loaded go to start function
 window.addEventListener('load', start);
 
-
+//initialise an empty variable
 let player = '';
+//make a variable  is an array that holds 3 values 
 let choice = ['rock', 'paper', 'scissors'];
 
 function start() {
+  //add event listener to all 3 buttons.
   document.querySelector("#buttons > button.rock").addEventListener('click', clickRock);
 
   document.querySelector("#buttons > button.paper").addEventListener('click', clickPaper);
